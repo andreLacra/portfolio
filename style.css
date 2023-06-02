@@ -1,0 +1,245 @@
+body{
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: url(./assets/img/background.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Poppins', sans-serif !important;
+        /* fade in */
+        animation-name: fadeIn;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        /* fade in */
+}
+
+html{
+    scroll-behavior: smooth !important;
+}
+
+/* fade in on load */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+.reveal{
+    position: relative;
+    transform: translateY(90px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* portfolio transition slider */
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+    -webkit-transition: -webkit-transform 1s ease;
+    -moz-transition: -webkit-transform 1s ease;
+    -ms-transition: -webkit-transform 1s ease;
+    -o-transition: -webkit-transform 1s ease;
+}
+
+
+.title{
+    margin-top: 10px;
+    font-size: clamp(47px, 1vw, 100px);
+    text-align: center; 
+}
+.title-about{
+    margin-top: 60px;
+    font-size: clamp(47px, 1vw, 100px);
+    text-align: center; 
+}
+.title-desc{
+    font-size: 20px;
+}
+#description-portfolio, #title-portfolio, #technologies-portfolio, #respo-portfolio{
+    text-align: start !important;
+}
+.portfolio-content, .certificates-content{
+    margin-top: 70px;
+}
+
+
+/* home */
+.navbar{
+    color: white;
+    background-color: black;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding: 10px !important;
+}
+.nav-item{
+    margin-right: 15px;
+}
+#logo{
+    height: 30px;
+}
+#logo:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+.navbar a:hover{
+    color: #D3D3D3 !important;
+    transition: color 0.5s;
+}
+
+.mainPage{
+    color: white;
+    min-height: 100vh;
+    width: 60%;
+    margin: auto;
+    padding: 70px;
+    text-align: center; 
+}
+.mainGreeting{
+    font-size: clamp(26px, 2vw, 90px);
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.btn-learnmore{
+    border-radius: 30px;
+    border: none;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    background-color:  #D3D3D3;
+}
+.btn-learnmore:hover{
+    background-color: white;
+    transition: background-color 0.5s;
+}
+
+
+.greet p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 40% }
+}
+
+
+/* about me */
+.aboutMe{
+    background-color: white !important;
+    min-height: 100vh;
+    padding: 20px;
+    color: black;
+}
+.highlight{
+    color: #800080;
+}
+.about-title{
+    margin-top: 30px;
+    font-size: clamp(47px, 1vw, 100px);
+    text-align: center;
+}
+.aboutInformation{
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+}
+#aboutIcon{
+    height: 150px;
+    margin-bottom: 30px;
+}
+#aboutDesc{
+    text-align: left;
+}
+
+#quote{
+    padding: 20px;
+    text-align: center;
+}
+
+/* portfolio */
+.portfolio{
+    background-color: #E8E8E8 !important;
+    min-height: 100vh;
+    padding: 50px;
+    color: black;
+    text-align: center;
+}
+.portfolio-title{
+    margin-top: 30px;
+    font-size: clamp(47px, 1vw, 100px);
+    text-align: center;
+}
+
+.portfolio-work{
+    margin-bottom: 55px;
+}
+
+/* certificates */
+.certificates{
+    background-color: white !important;
+    min-height: 100vh;
+    padding: 50px;
+    color: black;
+    text-align: center;
+}
+
+.certificatesImg{
+    height: 250px;
+}
+.certificatesTitle{
+    text-align: center;
+    margin-top: 15px;
+}
+.certificates-row{
+    margin-bottom: 20px;
+}
+
+/* contacts */
+.contacts{
+    background-color: #E8E8E8 !important;
+    padding: 50px;
+    color: black;
+    text-align: center;
+}
+.contacts-content{
+    margin-top: 30px;
+}
+#contacts-facebook, #contacts-github{
+    height: 50px;
+}
+#contacts-github{
+    margin-right: 35px;
+}
+#contacts-facebook:hover, #contacts-github:hover{
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+#email-link{
+    text-decoration: none;
+}
