@@ -209,11 +209,13 @@ hr{
 }
 
 .certificatesImg{
-    height: 350px;
+    height: 230px;
 }
 .certificatesTitle{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 25px;
+    margin: auto;
+    width: 260px;
 }
 .certificates-row{
     margin-bottom: 20px;
