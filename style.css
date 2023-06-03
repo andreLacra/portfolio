@@ -211,6 +211,9 @@ hr{
 .certificatesImg{
     height: 250px;
 }
+.certificatesImg-Huawei{
+    height: 195px;
+}
 .certificatesTitle{
     text-align: center;
     margin-top: 15px;
