@@ -155,6 +155,16 @@ hr{
     -o-transition: -webkit-transform 1s ease;
 }
 
+/* list */
+#list-wrapper ul
+{
+    text-align: left;
+}
+
+.title-list{
+    text-align: left;
+}
+
 
 .title{
     margin-top: 10px;
